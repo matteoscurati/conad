@@ -5,11 +5,24 @@
   background-size: cover
   position: relative
   color: $white
+  +margin-top(11)
 
 .hero__body
   display: table
   width: 100%
   text-align: center
+  +padding-top(7)
+
+.hero__logo
+  background: image-url('logo_insieme.png') no-repeat center center
+  background-size: contain
+  height: 15em
+  position: absolute
+  width: 14em
+  left: 50%
+  transform: translate(-50%, -50%)
+  +margin-top(3)
+  top: -3em
 
 .hero__body__inner
   display: table-cell

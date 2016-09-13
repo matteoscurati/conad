@@ -1,8 +1,10 @@
 .gallery
   .gallery__body
-    - 14.times do
+    - data.questions.question.each do |q|
       .gallery__item
-        .gallery__item__subtitle domanda n. 1
-        .gallery__item__title = lorem.words 6
+        .gallery__item__subtitle
+          | domanda n. 
+          = q.number
+        .gallery__item__title = q.text
         audio.gallery__item__player.plyr.plyr--audio.plyr--stopped controls=""
           source src="public/prova.mp3" type="audio/mp3"
