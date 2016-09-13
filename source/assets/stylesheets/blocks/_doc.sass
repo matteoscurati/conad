@@ -1,0 +1,36 @@
+.doc
+  +heading-font-family
+  margin-top: 35%
+
+  +at-breakpoint(desk)
+    margin-top: 30%
+
+  +at-breakpoint(wall)
+    margin-top: 18em
+
+.doc__body
+  margin: 0 auto
+  text-align: center
+
+.doc__title
+  +margin-bottom(1.5)
+  +font-size(epsilon)
+  text-transform: uppercase
+
+.doc__name
+  +margin-top(1.5)
+  +font-size(gamma)
+
+.doc__meta
+  +body-font-family
+  color: $red
+
+.doc__doc
+  width: 15em
+  height: 15em
+  background: image-url('doctor.jpg') no-repeat center center
+  background-size: cover
+  margin-left: auto
+  margin-right: auto
+  border-radius: 50%
+  border: 1px solid $base-body-color

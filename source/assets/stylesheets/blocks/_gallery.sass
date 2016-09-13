@@ -1,0 +1,37 @@
+.gallery
+  +margin-top(5)
+  background-color: $green
+  width: 100%
+
+.gallery__body
+
+.gallery__item
+  background-color: $white
+  +vertical-margin(4)
+  +padding(4)
+  min-height: 10em
+  margin-right: 1.5em
+  border-radius: 10px
+  width: 50%
+
+  +at-breakpoint(tab)
+    width: 60%
+
+  +at-breakpoint(lap)
+    width: 20em
+
+.gallery__item__subtitle
+  color: $orange
+  +heading-font-family
+  +font-size(delta)
+  text-transform: uppercase
+
+.gallery__item__title
+  +margin-top(1.5)
+  +margin-bottom(2)
+  color: $blue
+  +heading-font-family
+  +font-size(beta)
+  line-height: 1.2
+
+.gallery__item__player
