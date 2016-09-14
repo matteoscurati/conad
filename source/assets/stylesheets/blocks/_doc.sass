@@ -1,14 +1,11 @@
 .doc
+  +margin-top(1.5)
   +heading-font-family
-  margin-top: 35%
-
-  +at-breakpoint(desk)
-    margin-top: 30%
-
-  +at-breakpoint(wall)
-    margin-top: 18em
+  background-color: $green
+  +margin-bottom(1.5)
 
 .doc__body
+  +vertical-padding(5)
   margin: 0 auto
   text-align: center
 
@@ -19,11 +16,23 @@
 
 .doc__name
   +font-size(gamma)
+  line-height: 1.2
+  color: $white
 
 .doc__meta
   +margin-top(1.5)
   +body-font-family
   color: $red
+
+.doc__text
+  color: $white
+  +font-size(delta)
+  +padding-left(0)
+  +padding-bottom(3)
+
+  +at-breakpoint(desk)
+    +padding-left(2)
+    +padding-bottom(0)
 
 .doc__doc
   width: 15em
@@ -33,4 +42,5 @@
   margin-left: auto
   margin-right: auto
   border-radius: 50%
-  border: 1px solid $base-body-color
+  border: 5px solid $blue
+  background-color: $white
