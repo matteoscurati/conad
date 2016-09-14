@@ -1,7 +1,7 @@
 import $ from 'jQuery';
 import smoothScroll from 'smooth-scroll';
 import './vendor/player.js.es6';
-import './vendor/gallery.js.es6';
+//import './vendor/gallery.js.es6';
 
 require('jquery-ui');
 require('modernizr');
