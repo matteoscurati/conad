@@ -8,13 +8,11 @@
   "browser": {
     "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
     "jQuery": "./node_modules/jquery/dist/jquery.js",
-    "sticky": "./source/assets/javascripts/vendor/sticky.js",
     "wow": "./node_modules/wow.js/dist/wow.js"
   },
   "browserify-shim": {
     "jQuery": "$",
     "modernizr": "Modernizr",
-    "sticky": "sticky",
     "three": "global:THREE",
     "wow": "wow"
   },
