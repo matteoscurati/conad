@@ -2,6 +2,7 @@
   background-color: $white
   +margin-top(2)
   transition: all 0.5s ease-in-out
+  z-index: 5
 
   &.is-smaller
 
@@ -25,9 +26,28 @@
         top: 5em
 
       .menu__nav
+        +padding-top(7)
 
         a
           color: $white
+
+      .menu__radio
+        background: image-url('logo_radio24_negativo.svg') no-repeat center center
+        background-size: contain
+        width: 5em
+        height: 4em
+        position: relative
+        top: 0.2em
+        +margin-left(3)
+
+      .menu__facebook
+        background: image-url('facebook_negativo.svg') no-repeat center center
+        background-size: contain
+        width: 5em
+        height: 4em
+        top: -0.1em
+        position: relative
+        transition: all 0.5s ease-in-out
 
 .menu__logo
   background: image-url('logo_insieme.png') no-repeat center center
@@ -46,7 +66,7 @@
   text-align: center
   +font-size(delta)
   text-transform: uppercase
-  +vertical-padding(1.5)
+  +padding-top(1.5)
   transition: all 0.5s ease-in-out
 
   +at-breakpoint(lap)
@@ -55,3 +75,28 @@
   a
     text-decoration: none
     transition: all 0.5s ease-in-out
+
+.menu__radio
+  background: image-url('logo_radio24.svg') no-repeat center center
+  background-size: contain
+  width: 5em
+  height: 4em
+  position: relative
+  top: 0.2em
+  transition: all 0.5s ease-in-out
+
+  +at-breakpoint(lap)
+    margin-left: 3em !important
+
+.menu__facebook
+  background: image-url('facebook.svg') no-repeat center center
+  background-size: contain
+  width: 5em
+  height: 4em
+  top: -0.1em
+  position: relative
+  transition: all 0.5s ease-in-out
+  margin-left: 0em !important
+
+  +at-breakpoint(tab)
+    margin-left: 3em !important
