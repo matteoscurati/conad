@@ -8,11 +8,13 @@
   "browser": {
     "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
     "jQuery": "./node_modules/jquery/dist/jquery.js",
+    "sticky": "./source/assets/javascripts/vendor/sticky.js",
     "wow": "./node_modules/wow.js/dist/wow.js"
   },
   "browserify-shim": {
     "jQuery": "$",
     "modernizr": "Modernizr",
+    "sticky": "sticky",
     "three": "global:THREE",
     "wow": "wow"
   },
@@ -57,6 +59,7 @@
     "yargs": "^5.0.0"
   },
   "dependencies": {
+    "desandro-classie": "^1.0.1",
     "flickity": "^2.0.3",
     "jquery": "^3.1.0",
     "jquery-ui": "^1.12.0",

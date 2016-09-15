@@ -1,9 +1,33 @@
 .menu
   background-color: $white
   +margin-top(2)
+  transition: all 0.5s ease-in-out
+
+  &.is-smaller
 
   +at-breakpoint(lap)
     margin-top: -8em
+
+  +at-breakpoint(lap)
+    &.smaller
+      background-color: $blue
+      position: fixed
+      width: 100%
+      z-index: 100
+      top: 0
+      left: 0
+
+      +at-breakpoint(lap)
+        margin-top: -6em
+
+      .menu__logo
+        height: 10em
+        top: 5em
+
+      .menu__nav
+
+        a
+          color: $white
 
 .menu__logo
   background: image-url('logo_insieme.png') no-repeat center center
@@ -12,6 +36,7 @@
   position: relative
   width: 100%
   top: 0
+  transition: all 0.5s ease-in-out
 
   +at-breakpoint(lap)
     top: 10em
@@ -22,9 +47,11 @@
   +font-size(delta)
   text-transform: uppercase
   +vertical-padding(1.5)
+  transition: all 0.5s ease-in-out
 
   +at-breakpoint(lap)
     text-align: right
 
   a
     text-decoration: none
+    transition: all 0.5s ease-in-out
