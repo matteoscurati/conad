@@ -1,0 +1,38 @@
+.conad
+  +vertical-padding(5)
+  background-color: $white
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  position: relative
+  color: $black
+
+.conad__body
+  display: table
+  width: 100%
+  text-align: center
+
+.conad__body__inner
+  display: table-cell
+  vertical-align: middle
+  +vertical-padding(4)
+
+.conad__heading
+  +menu-font-family
+  +font-size(delta)
+  line-height: 1.2
+  margin-left: auto
+  margin-right: auto
+  max-width: 800px
+
+.conad__logo
+  +margin-top(1.5)
+  @extend .conad__heading
+  background-repeat: no-repeat
+  background-position: center center
+  background-image: image-url('conad.png') !important
+  background-size: contain
+  position: relative
+  color: $white
+  height: 5em
+  width: 100%
