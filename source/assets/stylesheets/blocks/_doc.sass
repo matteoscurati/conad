@@ -1,10 +1,8 @@
 .doc
-  +margin-top(1.5)
   +heading-font-family
-  background-color: $green
 
 .doc__body
-  +vertical-padding(5)
+  +vertical-padding(1)
   margin: 0 auto
   text-align: center
 
@@ -14,14 +12,25 @@
   text-transform: uppercase
 
 .doc__name
-  +font-size(gamma)
+  +font-size(smallprint)
   line-height: 1.2
-  color: $white
+  color: $grey
+  +menu-font-family
+  border-bottom: 1px solid $light-grey
+  +padding-bottom(1.8)
 
 .doc__meta
   +margin-top(1.5)
+  +heading-font-family
+  color: $black
+  text-align: center
+  +font-size(gamma)
+
+.doc__bio
+  +margin-top(1.5)
   +body-font-family
-  color: $red
+  color: $grey
+  +font-size(smallprint)
 
 .doc__text
   color: $white
@@ -34,12 +43,18 @@
     +padding-bottom(0)
 
 .doc__doc
-  width: 15em
-  height: 15em
+  width: 100%
+  height: 10em
   background: image-url('federico_taddia.png') no-repeat center center
-  background-size: cover
+  background-size: contain
   margin-left: auto
   margin-right: auto
-  border-radius: 50%
-  border: 5px solid $blue
+  border-bottom: 1px solid $light-grey
   background-color: $white
+
+.doc__border
+  border-right: none
+
+  +at-breakpoint(lap)
+    border-right: 1px solid $light-grey
+    padding-right: 0.75em

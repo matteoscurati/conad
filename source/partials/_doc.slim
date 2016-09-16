@@ -1,16 +1,11 @@
 .doc#qa
   .wrap
     .grid--middle
-      .grid__item.width-12-12.lap-4-12
+      .grid__item.width-12-12.lap-4-12.desk-3-12.doc__border
         .doc__body
-          /.doc__title
-            /= lorem.words 2
-          .doc__doc.wow.tada
-          .doc__meta
-            | a cura di Federico Taddia
-          .doc__name
-            .formatted-content
-              h1 Le domande dei bambini e le risposte degli esperti
-      .grid__item.width-12-12.lap-8-12
-        .formatted-content.doc__text
-          = data.doc.text
+          .doc__doc.wow.fadeIn
+          .doc__meta Mangiando si impara
+          .doc__name Federico Taddia
+          .doc__bio.visible--on-lap = data.doc.text
+      .grid__item.width-12-12.lap-8-12.desk-9-12
+        = partial "partials/gallery"
