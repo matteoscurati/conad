@@ -1,14 +1,15 @@
 .hero
   background-repeat: no-repeat
   background-position: center center
-  background-color: $blue
+  //background-color: $grey
   background-size: cover
   position: relative
-  color: $white
+  color: $black
 
 .hero--testata
   @extend .hero
   background-image: image-url('testata.jpg')
+  color: $white
 
 .hero__body
   display: table
@@ -35,6 +36,17 @@
 .hero__heading--testata
   @extend .hero__heading
   +font-size(mega)
+
+.hero__heading--logo
+  @extend .hero__heading
+  background-repeat: no-repeat
+  background-position: center center
+  background-image: image-url('logo_radio24_negativo.svg')
+  background-size: contain
+  position: relative
+  color: $white
+  height: 5em
+  width: 5em
 
 .hero__text
   +body-font-family
