@@ -7,15 +7,17 @@
   color: $white
 
 .hero--testata
-  background-size: cover
-  background: image-url('testata.jpg') no-repeat center center
-  +vertical-padding(8)
-  +margin-bottom(1.5)
+  @extend .hero
+  background-image: image-url('testata.jpg')
 
 .hero__body
   display: table
   width: 100%
   text-align: left
+
+.hero__body--testata
+  @extend .hero__body
+  text-align: center
 
 .hero__body__inner
   display: table-cell
@@ -29,6 +31,10 @@
   margin-left: auto
   margin-right: auto
   max-width: 800px
+
+.hero__heading--testata
+  @extend .hero__heading
+  +font-size(mega)
 
 .hero__text
   +body-font-family
