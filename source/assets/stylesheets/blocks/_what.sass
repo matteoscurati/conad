@@ -1,19 +1,10 @@
 .what
   @extend .hero
-  background-color: $blue
-  +margin-top(0)
-
-  hr
-    width: 60%
-    margin-left: auto
-    margin-right: auto
-    height: 5px
-    background: $blue
-    background-image: linear-gradient(to right, $green, $blue, $green)
-    border: 0
+  background-color: $grey
+  +margin-top(5)
 
 .what__body
-  +padding-top(2)
+  +vertical-padding(4)
   @extend .hero__body
 
 .what__body__inner
@@ -26,7 +17,7 @@
 
 .what__text
   @extend .hero__text
-  +font-size(delta)
+  +font-size(epsilon)
   color: white
   +margin-top(2)
   text-align: left
