@@ -3,13 +3,20 @@
     .wrap
       .grid--middle
         .grid__item.width-12-12.lap-4-12.desk-4-12
+          .menu__caption in collaborazione con
           a href="http://insiemeperlascuola.it/atpc/insiemeperlascuola/j/scrittori-di-classe-come-funziona" target="_blank"
             .menu__logo
+              = image_tag 'conad.png'
         .grid__item.width-12-12.lap-8-12.desk-8-12
           .menu__nav
             .nav
               .nav__item
-                a data-scroll="" href="#qa" Le domande
+                a.tooltip data-tooltip-content="#tooltip__content" Le domande
+                .tooltip__templates
+                  #tooltip__content
+                    = partial "partials/questions"
+              .nav__item
+                a data-scroll="" href="#scrittori" Scrittori di classe
               br.visible--on-eq-palm
               a href="https://www.facebook.com/Insieme-per-la-Scuola-1453942051525552/" target='_blank'
                 .nav__item.menu__facebook

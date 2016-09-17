@@ -3,7 +3,7 @@
     .grid
       - data.questions.question.each do |q|
         .grid__item.width-6-12.lap-4-12.desk-3-12
-          .gallery__item.wow.flipInX data-wow-delay="0.#{q.number}s"
+          .gallery__item.wow.flipInX data-wow-delay="0.#{q.number}s" id="#{q.number}"
             .gallery__item__subtitle
               | domanda n. 
               = q.number

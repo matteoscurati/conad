@@ -1,6 +1,7 @@
 import $ from 'jQuery';
 import classie from 'desandro-classie';
 import smoothScroll from 'smooth-scroll';
+import tooltipster from 'tooltipster';
 import './vendor/player.js.es6';
 //import './vendor/gallery.js.es6';
 
@@ -10,6 +11,7 @@ require('wow');
 
 $(document).ready(() => {
   smoothScroll.init({
+    offset: 130
   });
 });
 
@@ -34,3 +36,19 @@ function init() {
 }
 
 window.onload = init();
+
+$(document).ready(function() {
+  $('.tooltip').tooltipster({
+    theme: 'tooltipster-borderless',
+    contentAsHTML: true,
+    interactive: true,
+    trigger: 'custom',
+    triggerOpen: {
+      click: true
+    },
+    triggerClose: {
+      click: true,
+      tap: true
+    }
+  });
+});

@@ -1,0 +1,5 @@
+.questions
+  - data.questions.question.each do |q|
+    .questions__item
+      a data-scroll="" href="##{q.number}"
+        = q.text
