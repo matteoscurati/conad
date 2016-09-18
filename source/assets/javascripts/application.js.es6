@@ -44,7 +44,9 @@ $(document).ready(function() {
     interactive: true,
     trigger: 'custom',
     triggerOpen: {
-      click: true
+      click: true,
+      touchstart: true,
+      tap: true
     },
     triggerClose: {
       click: true,
