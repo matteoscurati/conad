@@ -1,12 +1,14 @@
 .gallery
   .wrap.gallery__body
     .grid
-      - data.questions.question.each do |q|
-        .grid__item.width-6-12.lap-4-12.desk-3-12
-          .gallery__item.wow.flipInX data-wow-delay="0.#{q.number}s" id="#{q.number}"
-            .gallery__item__subtitle
-              | domanda n. 
-              = q.number
-            .gallery__item__title = q.text
-            audio.gallery__item__player.plyr.plyr--audio.plyr--stopped controls=""
-              source src="public/#{q.number}.mp3" type="audio/mp3"
+      - data_ordered = data.questions.question.sort_by(&:number)
+      - data_ordered.each do |q|
+        - if q.file
+          .grid__item.width-6-12.lap-6-12.desk-6-12
+            .gallery__item.wow.flipInX data-wow-delay="0.#{q.number}s" id="#{q.number}"
+              .gallery__item__subtitle
+                | domanda n. 
+                = q.number
+              .gallery__item__title = q.text
+              audio.gallery__item__player.plyr.plyr--audio.plyr--stopped controls=""
+                source src="public/#{q.file}.mp3" type="audio/mp3"
