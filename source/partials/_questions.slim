@@ -1,5 +1,7 @@
 .questions
-  - data.questions.question.each do |q|
-    .questions__item
-      a data-scroll="" href="##{q.number}"
-        = q.text
+  - data_ordered = data.questions.question.sort_by(&:number)
+  - data_ordered.each do |q|
+    - if q.file
+      .questions__item
+        a data-scroll="" href="##{q.number}"
+          = q.text
