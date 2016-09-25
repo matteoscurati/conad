@@ -1,37 +1,44 @@
 ---
 question:
   - text: "Cos&rsquo;&egrave; la piramide alimentare?"
-    number: "1"
+    number: 9
+    file: "piramide"
   - text: "Cos&rsquo;&egrave; lo spreco?"
-    number: "2"
+    number: 12
+    file: "spreco"
   - text: "Quando un cibo fa bene?"
-    number: "2"
+    number: 2
     file: "cibobene"
   - text: "Quando un cibo fa male?"
-    number: "7"
+    number: 7
     file: "cibomale"
   - text: "A cosa servono le etichette?"
-    number: "5"
+    number: 5
     file: "etichette"
   - text: "Perch&eacute; bisogna mangiare la verdura?"
-    number: "6"
-  - text: "La frutta di stagione &egrave; pi&ugrave; buona?"
-    number: "7"
+    number: 13
+    file: "verdura"
+  - text: "Perch&eacute; la frutta di stagione &egrave; pi&ugrave; buona?"
+    number: 8
+    file: "fruttastagione"
   - text: "Cosa bisogna mangiare a merenda?"
-    number: "8"
+    number: 11
+    file: "merenda"
   - text: "Perch&eacute; i grassi&hellip; fanno ingrassare?"
-    number: "1"
+    number: 1
     file: "grassi"
   - text: "Perch&eacute; abbiamo fame?"
-    number: "10"
+    number: 14
+    file: "fame"
   - text: "Che cos&rsquo;&egrave; un alimento?"
-    number: "11"
+    number: 10
+    file: "alimento"
   - text: "Cosa vuol dire biologico?"
-    number: "3"
+    number: 3
     file: "biologico"
   - text: "E&rsquo; vero che i grassi si possono bruciare?"
-    number: "6"
+    number: 6
     file: "bruciare"
   - text: "Cosa sono le calorie"
-    number: "4"
+    number: 4
     file: "calorie"
